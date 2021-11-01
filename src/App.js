@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <Game />
-        {/* {this.props.authenticated ? (
+        {this.props.authenticated ? (
           <Switch>
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/" exact component={Login} />
@@ -22,7 +22,7 @@ class App extends Component {
             <Route path="/" exact component={Login} />
             <Redirect to="/" />
           </Switch>
-        )} */}
+        )}
       </div>
     );
   }
