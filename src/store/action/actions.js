@@ -4,8 +4,7 @@ import axios from "axios";
 export const tryLogin = (username, password) => {
   return (dispatch) => {
     dispatch(loginAttempt());
-    const url =
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBxpA6JDfWhdcIVcJVqlJS_ZNTy_a5aNps";
+    const url = "https://identitytoolkit.googleapis.com/v1/";
     const authData = {
       email: username,
       password: password,
